@@ -10,6 +10,7 @@ class Song
 
   #creating a table
   def self.create_table
+    #use heredoc for multiple line sql query
     sql =  <<-SQL
       CREATE TABLE IF NOT EXISTS songs (
         id INTEGER PRIMARY KEY,
